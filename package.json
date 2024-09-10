@@ -1,0 +1,23 @@
+{
+  "name": "node-express-api",
+  "version": "1.0.0",
+  "description": "testing api non-production",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "webdevj",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.20.0"
+  },
+  "engines": {
+    "node": "20.15.1"
+  }
+}
