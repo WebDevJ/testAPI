@@ -15,6 +15,7 @@
   "author": "webdevj",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.20.0"
   },
   "engines": {

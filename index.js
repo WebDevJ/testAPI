@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors'); // Import CORS
 const app = express();
 const PORT = 3001;
+
+// Enable CORS for all routes
+app.use(cors());
 
 let obj = {
     "users": {
@@ -32,27 +36,15 @@ let nai = {
 
 app.get('/', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(
-        obj
-    ));
-
-})
+    res.json(obj);
+});
 
 // National Average Income
 app.get('/nai', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(
-        nai
-    ));
-
-})
-
-
-
-
-
-
+    res.json(nai);
+});
 
 app.listen(PORT, () => {
-    console.log(`listening on PORT ${PORT}`);
+    console.log(`Listening on PORT ${PORT}`);
 });
